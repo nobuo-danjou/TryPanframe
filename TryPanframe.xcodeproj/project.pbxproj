@@ -12,6 +12,12 @@
 		7BAB7AEA1C642CFD00111AA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BAB7AE81C642CFD00111AA8 /* Main.storyboard */; };
 		7BAB7AEC1C642CFD00111AA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BAB7AEB1C642CFD00111AA8 /* Assets.xcassets */; };
 		7BAB7AEF1C642CFD00111AA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BAB7AED1C642CFD00111AA8 /* LaunchScreen.storyboard */; };
+		7BAB7AF91C642D3300111AA8 /* PanframeSDKWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB7AF81C642D3300111AA8 /* PanframeSDKWrapper.m */; };
+		7BAB7AFB1C642D6200111AA8 /* Panframe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BAB7AFA1C642D6200111AA8 /* Panframe.framework */; };
+		7BAB7AFE1C642D9500111AA8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BAB7AFD1C642D9500111AA8 /* CoreMotion.framework */; };
+		7BAB7B001C642D9C00111AA8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BAB7AFF1C642D9C00111AA8 /* CoreLocation.framework */; };
+		7BAB7B021C642DFA00111AA8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BAB7B011C642DF900111AA8 /* CoreMedia.framework */; };
+		7BAB7B041C642E0400111AA8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BAB7B031C642E0400111AA8 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,14 @@
 		7BAB7AEB1C642CFD00111AA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BAB7AEE1C642CFD00111AA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BAB7AF01C642CFD00111AA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BAB7AF61C642D3200111AA8 /* TryPanframe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TryPanframe-Bridging-Header.h"; sourceTree = "<group>"; };
+		7BAB7AF71C642D3300111AA8 /* PanframeSDKWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanframeSDKWrapper.h; sourceTree = "<group>"; };
+		7BAB7AF81C642D3300111AA8 /* PanframeSDKWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanframeSDKWrapper.m; sourceTree = "<group>"; };
+		7BAB7AFA1C642D6200111AA8 /* Panframe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Panframe.framework; sourceTree = "<group>"; };
+		7BAB7AFD1C642D9500111AA8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		7BAB7AFF1C642D9C00111AA8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7BAB7B011C642DF900111AA8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		7BAB7B031C642E0400111AA8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BAB7B041C642E0400111AA8 /* AudioToolbox.framework in Frameworks */,
+				7BAB7B021C642DFA00111AA8 /* CoreMedia.framework in Frameworks */,
+				7BAB7B001C642D9C00111AA8 /* CoreLocation.framework in Frameworks */,
+				7BAB7AFE1C642D9500111AA8 /* CoreMotion.framework in Frameworks */,
+				7BAB7AFB1C642D6200111AA8 /* Panframe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +73,30 @@
 		7BAB7AE31C642CFD00111AA8 /* TryPanframe */ = {
 			isa = PBXGroup;
 			children = (
+				7BAB7AFC1C642D6A00111AA8 /* Frameworks */,
 				7BAB7AE41C642CFD00111AA8 /* AppDelegate.swift */,
 				7BAB7AE61C642CFD00111AA8 /* ViewController.swift */,
+				7BAB7AF71C642D3300111AA8 /* PanframeSDKWrapper.h */,
+				7BAB7AF81C642D3300111AA8 /* PanframeSDKWrapper.m */,
 				7BAB7AE81C642CFD00111AA8 /* Main.storyboard */,
 				7BAB7AEB1C642CFD00111AA8 /* Assets.xcassets */,
 				7BAB7AED1C642CFD00111AA8 /* LaunchScreen.storyboard */,
 				7BAB7AF01C642CFD00111AA8 /* Info.plist */,
+				7BAB7AF61C642D3200111AA8 /* TryPanframe-Bridging-Header.h */,
 			);
 			path = TryPanframe;
+			sourceTree = "<group>";
+		};
+		7BAB7AFC1C642D6A00111AA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BAB7B031C642E0400111AA8 /* AudioToolbox.framework */,
+				7BAB7B011C642DF900111AA8 /* CoreMedia.framework */,
+				7BAB7AFF1C642D9C00111AA8 /* CoreLocation.framework */,
+				7BAB7AFD1C642D9500111AA8 /* CoreMotion.framework */,
+				7BAB7AFA1C642D6200111AA8 /* Panframe.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +172,7 @@
 			files = (
 				7BAB7AE71C642CFD00111AA8 /* ViewController.swift in Sources */,
 				7BAB7AE51C642CFD00111AA8 /* AppDelegate.swift in Sources */,
+				7BAB7AF91C642D3300111AA8 /* PanframeSDKWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,10 +283,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TryPanframe",
+				);
 				INFOPLIST_FILE = TryPanframe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.soffritto.TryPanframe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TryPanframe/TryPanframe-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -258,10 +301,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TryPanframe",
+				);
 				INFOPLIST_FILE = TryPanframe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.soffritto.TryPanframe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TryPanframe/TryPanframe-Bridging-Header.h";
 			};
 			name = Release;
 		};
