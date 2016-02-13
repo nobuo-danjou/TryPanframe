@@ -23,6 +23,7 @@
 //
 
 #import "PanframeSDKWrapper.h"
+#import <Panframe/Panframe.h>
 
 #pragma mark ---------------------
 #pragma mark - Function Prototypes
@@ -50,6 +51,8 @@ enum PFNAVIGATIONMODE navigationMode_2_PF_NAVIGATION(PanframeNavigationMode mode
 {
     if (self = [super init]) {
         self.asset = (id<PFAsset>)[PFObjectFactory assetFromUrl:url observer:(PFAssetObserver*)self];
+//        PFSoundEngine *se = [PFObjectFactory PFCreateSoundEngine];
+//        NSLog(@"%@", se);
         panframeAssetObserver = observer;
     }
     return self;

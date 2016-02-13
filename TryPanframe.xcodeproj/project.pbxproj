@@ -12,7 +12,7 @@
 		7BAB7AEA1C642CFD00111AA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BAB7AE81C642CFD00111AA8 /* Main.storyboard */; };
 		7BAB7AEC1C642CFD00111AA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BAB7AEB1C642CFD00111AA8 /* Assets.xcassets */; };
 		7BAB7AEF1C642CFD00111AA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BAB7AED1C642CFD00111AA8 /* LaunchScreen.storyboard */; };
-		7BAB7AF91C642D3300111AA8 /* PanframeSDKWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB7AF81C642D3300111AA8 /* PanframeSDKWrapper.m */; };
+		7BAB7AF91C642D3300111AA8 /* PanframeSDKWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB7AF81C642D3300111AA8 /* PanframeSDKWrapper.mm */; };
 		7BAB7AFB1C642D6200111AA8 /* Panframe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BAB7AFA1C642D6200111AA8 /* Panframe.framework */; };
 		7BAB7AFE1C642D9500111AA8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BAB7AFD1C642D9500111AA8 /* CoreMotion.framework */; };
 		7BAB7B001C642D9C00111AA8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BAB7AFF1C642D9C00111AA8 /* CoreLocation.framework */; };
@@ -32,7 +32,7 @@
 		7BAB7AF01C642CFD00111AA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BAB7AF61C642D3200111AA8 /* TryPanframe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TryPanframe-Bridging-Header.h"; sourceTree = "<group>"; };
 		7BAB7AF71C642D3300111AA8 /* PanframeSDKWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanframeSDKWrapper.h; sourceTree = "<group>"; };
-		7BAB7AF81C642D3300111AA8 /* PanframeSDKWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanframeSDKWrapper.m; sourceTree = "<group>"; };
+		7BAB7AF81C642D3300111AA8 /* PanframeSDKWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PanframeSDKWrapper.mm; sourceTree = "<group>"; };
 		7BAB7AFA1C642D6200111AA8 /* Panframe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Panframe.framework; sourceTree = "<group>"; };
 		7BAB7AFD1C642D9500111AA8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		7BAB7AFF1C642D9C00111AA8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -82,7 +82,7 @@
 				7BAB7AE41C642CFD00111AA8 /* AppDelegate.swift */,
 				7BAB7AE61C642CFD00111AA8 /* ViewController.swift */,
 				7BAB7AF71C642D3300111AA8 /* PanframeSDKWrapper.h */,
-				7BAB7AF81C642D3300111AA8 /* PanframeSDKWrapper.m */,
+				7BAB7AF81C642D3300111AA8 /* PanframeSDKWrapper.mm */,
 				7BAB7AE81C642CFD00111AA8 /* Main.storyboard */,
 				7BAB7AEB1C642CFD00111AA8 /* Assets.xcassets */,
 				7BAB7AED1C642CFD00111AA8 /* LaunchScreen.storyboard */,
@@ -180,7 +180,7 @@
 			files = (
 				7BAB7AE71C642CFD00111AA8 /* ViewController.swift in Sources */,
 				7BAB7AE51C642CFD00111AA8 /* AppDelegate.swift in Sources */,
-				7BAB7AF91C642D3300111AA8 /* PanframeSDKWrapper.m in Sources */,
+				7BAB7AF91C642D3300111AA8 /* PanframeSDKWrapper.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

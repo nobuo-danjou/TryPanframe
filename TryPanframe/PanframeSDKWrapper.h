@@ -23,7 +23,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Panframe/Panframe.h>
+#import <CoreMedia/CoreMedia.h>
+#import <Panframe/PFView.h>
+#import <Panframe/PFAsset.h>
 
 typedef NS_ENUM(NSInteger, PanframeAssetMessage) {
     PanframeAssetMessageLoaded            = 1,

@@ -21,6 +21,10 @@ class ViewController: UIViewController, PanframeAssetObserver {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         pfView = PanframeView(frame: self.view.frame)
         pfView?.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
         pfView?.navigationMode = .Motion
@@ -33,13 +37,10 @@ class ViewController: UIViewController, PanframeAssetObserver {
         
         self.view.addSubview(pfView!)
         self.view.sendSubviewToBack(pfView!)
-        pfView?.setViewMode(.Spherical, andAspectRatio: 16.0/9.0)
+        pfView?.setViewMode(.Spherical, andAspectRatio: 1/1)
         pfView?.setFieldOfView(75.0)
-//        pfView?.setInterfaceOrientation(self.interfaceOrientation)
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
+        pfView?.setInterfaceOrientation(UIApplication.sharedApplication().statusBarOrientation)
+
         pfView?.run()
     }
 
